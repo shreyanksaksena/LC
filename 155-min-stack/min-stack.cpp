@@ -7,7 +7,7 @@ stack<int> st , mn ;
     
     void push(int val) {
         st.push(val) ; // Keep pushing the elements in the stack st
-        if(mn.empty() || val <= mn.top()) // check if the stack is empty push and most importantly check if the the new incoming value is <= mn.top  st = 3 1 2 1    mn = 3 1 1  3 gets pushed into the stack then since 1 <=3 1 get pushed 
+        if(mn.empty() || val <= mn.top()) // check if the stack is empty push into min stack and most importantly check if the the new incoming value is <= mn.top  st = 3 1 2 1    mn = 3 1 1  3 gets pushed into the stack then since 1 <=3 1 get pushed 
         {
             mn.push(val) ;
         }
